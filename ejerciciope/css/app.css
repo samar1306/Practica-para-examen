@@ -1,0 +1,104 @@
+:root { --app-primary:#0d6b2f; --app-primary-dark:#084c22; --app-soft:#eef7f1; --app-text:#1c1c1e; --app-muted:#6e6e73; }
+body { background:#f5f5f7; }
+.navbar,.toolbar { --f7-navbar-bg-color:#fff; --f7-toolbar-bg-color:#fff; }
+.navbar .title { font-weight:700; }
+.panel-left { width:285px; }
+.menu-header { min-height:140px; padding:32px 20px 22px; box-sizing:border-box; background:linear-gradient(135deg,var(--app-primary),var(--app-primary-dark)); color:#fff; display:flex; align-items:flex-end; gap:12px; }
+.menu-logo { width:46px; height:46px; border-radius:14px; display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,.16); }
+.menu-logo i { font-size:28px; }
+.menu-header h2 { margin:0; font-size:20px; }
+.menu-header p { margin:3px 0 0; opacity:.75; font-size:13px; }
+.panel-menu { margin-top:10px; }
+.panel-menu a { display:flex !important; align-items:center; gap:14px; }
+.panel-menu i { color:var(--app-primary); }
+/* ==============================
+   BOTTOM BAR
+================================ */
+
+.main-bottom-bar {
+  height: 72px;
+  --f7-toolbar-height: 72px;
+  background: #fff;
+}
+
+.main-bottom-bar .toolbar-inner {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.main-bottom-bar .link {
+  flex: 1;
+  height: 72px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  padding: 7px 0 5px;
+  box-sizing: border-box;
+
+  line-height: normal;
+  overflow: visible;
+
+  font-size: 11px;
+  color: #222;
+}
+
+.main-bottom-bar .link .f7-icons {
+  display: block;
+
+  width: 28px;
+  height: 28px;
+
+  font-size: 24px;
+  line-height: 28px;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: visible;
+}
+
+.main-bottom-bar .link span {
+  display: block;
+  height: 16px;
+
+  font-size: 11px;
+  line-height: 16px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.main-bottom-bar .tab-link-active {
+  color: #0d6b2f;
+  font-weight: 600;
+}
+.hero { margin:16px; padding:28px 22px; border-radius:24px; background:linear-gradient(135deg,#0d6b2f,#149447); color:#fff; box-shadow:0 12px 30px rgba(13,107,47,.18); }
+.hero h1 { margin:10px 0; font-size:30px; line-height:1.08; }
+.hero p { margin:0 0 22px; opacity:.9; line-height:1.5; }
+.hero-badge { display:inline-block; background:rgba(255,255,255,.16); padding:6px 10px; border-radius:999px; font-size:12px; font-weight:700; }
+.hero-button { --f7-button-bg-color:#fff; --f7-button-text-color:var(--app-primary); font-weight:700; }
+.quick-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.quick-card { min-height:120px; box-sizing:border-box; padding:18px; border-radius:18px; background:#fff; color:var(--app-text); box-shadow:0 5px 18px rgba(0,0,0,.06); display:flex; flex-direction:column; justify-content:center; }
+.quick-card i { color:var(--app-primary); font-size:29px; margin-bottom:12px; }
+.quick-card strong { font-size:15px; }
+.quick-card span { color:var(--app-muted); font-size:12px; margin-top:3px; }
+.demo-card { border-radius:18px; box-shadow:0 5px 18px rgba(0,0,0,.06); }
+.demo-card h3 { margin:12px 0 8px; }
+.demo-card p { color:var(--app-muted); line-height:1.5; }
+.demo-icon { width:50px; height:50px; border-radius:15px; background:var(--app-soft); display:flex; align-items:center; justify-content:center; }
+.demo-icon i { color:var(--app-primary); }
+.example-header { background:#fff; padding:22px; border-radius:20px; box-shadow:0 5px 18px rgba(0,0,0,.06); display:flex; gap:16px; align-items:center; }
+.example-header-icon { width:58px; height:58px; flex:0 0 58px; border-radius:17px; background:var(--app-soft); display:flex; align-items:center; justify-content:center; }
+.example-header-icon i { color:var(--app-primary); font-size:30px; }
+.example-header h1 { margin:3px 0 6px; font-size:23px; }
+.example-header p { margin:0; color:var(--app-muted); line-height:1.4; }
+.eyebrow { color:var(--app-primary); font-size:11px; font-weight:800; letter-spacing:.08em; }
+@media (min-width:768px) { .hero,.quick-grid,.example-header,.list.inset { max-width:760px; margin-left:auto; margin-right:auto; } }
